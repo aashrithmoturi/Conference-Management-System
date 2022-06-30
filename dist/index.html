@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Managament System</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/1a4089a622.js" crossorigin="anonymous"></script>
+
+    <!-- Linking With styleSheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    
+
+
+    <!-- This Part Includes Title Section -->
+    <section id="Title">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-color-blue">
+
+            <div class="container-fluid">
+              <a class="navbar-brand fnt-sz-3 pd-5" href="#">InfiMeet</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active mg-5 fnt-sz-2" aria-current="page" href="#">Home</a>
+                  <a class="nav-link mg-5 fnt-sz-2" href="#experience">Guidelines</a>
+                  <a class="nav-link mg-5 fnt-sz-2" href="#features">Features</a>
+                  <a class="nav-link mg-5 fnt-sz-2" href="./dashboard.html">Dashboard</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pd-2">
+              <a href="hostform.html"><button class="btn btn-outline-primary btn-lg" type="submit">Create Session</button></a>
+            </div>
+            
+            <div class="pd-2">
+              <a href="myevents.html"><button class="btn btn-primary btn-lg" type="submit">My Events</button></a>
+            </div>
+
+            <div class="pd-2">
+              <button class="btn btn-outline-primary btn-lg logout" type="submit">Logout</button>
+            </div>
+          
+        </nav>
+
+
+        <!-- Grid for the showCase -->
+        <div class="container-fluid">
+
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 class="pd-7 mg-bt-10">Meet new and interesting People to build the network</h1>
+            </div>
+            <div class="col-lg-6 bd-rad-10 dimensions box-shadow">
+              <img class="image img-cover" src="images/Conference1.jpg" alt="Meet-mockup">
+              <div class="img-details">
+                <ul>
+                  <li>Sharpen your knowledge</li>
+                  <li>Team building</li>
+                  <li>Break out of your comfort zone</li>
+                  <li>Re-energise</li>
+                  <li>Gain and share new ideas and best practices</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+
+    </section>
+    
+
+
+  
+  <!-- Font Awesome Link For Users -->
+  <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
+
+  <section id="showcase">
+
+    <div class="row">
+
+      <div class="col-lg-4 showcase-box">
+        <!-- <i class="icon fas fa-easy-to-use fa-5x"></i> -->
+        <i class="icon fas fa-user fa-5x"></i>
+        <h3>User friendly</h3>
+        <p>High priority is given for the people with less knowledge on tech.So easy to use, even a person with little to no knowledge on Tech can access the features</p>
+      </div>
+
+      <div class="col-lg-4 showcase-box">
+        <i class="icon fa fa-users fa-5x" aria-hidden="true"></i>
+        <h3>Guaranteed to work</h3>
+        <p>Highly focused on building a strong network among the people and let them leran new and interesting stuff</p>
+      </div>
+
+      <div class="col-lg-4 showcase-box">
+        <i class="icon fas fa-bullseye fa-5x"></i>
+        <h3>Very Specific</h3>
+        <p>Highly specific towards a community of people with common interests</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+    <!--       Guidelines        -->
+
+
+    <section id="experience">
+      <div class="timeline">
+  
+          <div class="timeline-box ">
+              <div class="timeline-container">
+                  <h3 class="experience-designation  m0 clr-dark-blue"> Dashboard </h3>
+                  <p class="experience-description text-align-justify clr-grey"> The very first step a participant has to do inorder to attend an event is to go to the dashboard which shows all types of sessions under each session one can find the specific events.</p>
+              </div>
+          </div>
+          
+          <div class="timeline-box right ">
+              <div class="timeline-container">
+                  <h3 class="experience-designation  m0 clr-dark-blue"> Registration </h3>
+                  <p class="experience-description text-align-justify clr-grey"> Once a participant enters the dashboard,one can see all the events listed under each category. You have to register for the specific event that you are looking for.</p>
+              </div>
+          </div>
+  
+          <div class="timeline-box left ">
+              <div class="timeline-container">
+                  <h3 class="experience-designation m0 clr-dark-blue"> Attend The Event </h3>
+                  <p class="experience-description text-align-justify clr-grey"> Participants can attend event only once he/she completes the registration through google authenticaton.Click on attend event button, it would let you see all the events taht you registered.</p>
+              </div>
+          </div>
+  
+          <div id="timeline-divider">
+              <div class="timeline-traveller">
+                  <div>
+                      <i class="clr-pink fas fa-plane"></i>
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+  
+    </section>
+
+
+
+
+  <!-- features -->
+
+  <section id="features">
+
+    <div id="carouselExampleControls" class="carousel slide">
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active testimonials-item">
+          <h2>This Feature will let host to organize a conference which requires the authentication of the host's google account.Host is bound to choose a particular type of session mentioned in the dashboard.Once the host creates a session it gets updated in the dashboard and lets participants to view them.</h2>
+          <!-- <i class="icon1 fas fa-user-cog fa-5x testimonials-img"></i> -->
+          <img class="testimonials-img" src="images/host.png" alt="Host-info">
+          <em>Host</em>
+        </div>
+
+        <div class="carousel-item testimonials-item">  
+          <h2 class="testimonial-text">Dashboard primarily consists of four kinds of sessions which include keynote sessions, paper presentation, poster presentation and invite talks.Among them invite talks will let the host share the session details in person. if the recipient accepts the invitation, corresponding session gets added into the registered sessions.</h2>
+          <img class="testimonials-img" src="images/dashboard.jpg" alt="Dashboard-info">
+          <em>Dashboard</em>
+        </div>
+        
+        <div class="carousel-item testimonials-item">  
+          <h2 class="testimonial-text">This feature will let the participants view or enter into the events which were already registered by the participant.All the four type of sessions can be entered only with the help of this feature, After the corresponding session starts and before it ends.</h2>
+          <img class="testimonials-img" src="images/attend.png" alt="attend-info">
+          <em>Attend an Event</em>
+        </div>
+
+        <div class="carousel-item testimonials-item">  
+          <h2 class="testimonial-text">Inorder to attend any event the participant must register for the corresponding session without which is not possible to enter any session.Once a participant registers for a session, the session gets added into the participant's list of events, then the person will be able to access the session.</h2>
+          <img class="testimonials-img" src="images/registration.png" alt="Registration-info">
+          <em>Registration</em>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span>Previous</span>
+
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span>Next</span>
+        <span class="carousel-control-next-icon"></span>
+        
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+
+  <!-- This will implement to go to the top of the page -->
+  <section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-alt-circle-up fa-3x"></i></button>
+  </section>
+
+
+  <script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+<script src="bundle.js"></script>
+</body>
+</html>

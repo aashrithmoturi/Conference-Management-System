@@ -1,0 +1,117 @@
+<!-- "npm  init -y"-->
+<!-- "npm i webpack webpack-cli -D" -->
+<!-- Then go to webpack.config.js  -->
+<!-- Then go to package.json and add build : webpack-->
+<!-- Then run "npm run build" and dont stop it-->
+
+
+<!-- Firbase Starts From Here -->
+<!-- "npm install firebase" -->
+<!-- Take config from firebase and paste it in the index.js -->
+
+
+<!-- RealTime DataCollection to avoid refreshing  -->
+<!-- onSnapshot is used for this instead of getDocs -->
+
+
+<!-- FireStore Queries -->
+<!-- we used queries instead of colRef for the specificity however we can use colRef to get the whole collection -->
+
+
+<!-- Ordering data  -->
+<!-- we used orderBy for the filtering then we saw an error on the console then created an index in firebase -->
+
+<!-- Timestamps -->
+<!-- for this we first cleared the database and then use "createdAt:" -->
+
+
+<!-- Subscribing to Auth Changes -->
+<!-- onauthStateChange is imported -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireBase</title>
+
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1>Getting Started with firebase</h1>
+    <h2>Firebase Firestore</h2>
+
+    <!-- Host create session -->
+    <form class="createEvent">
+        <label for="host">Host:</label>
+        <input type="text" name="host" required>
+
+        <label for="starttime">StartTime:</label>
+        <input type="text" name="starttime" required>
+
+        <label for="endtime">Endtime:</label>
+        <input type="text" name="endtime" required>
+
+        <label for="date">Date:</label>
+        <input type="text" name="date" required>
+
+        <label for="meetlink">MeetLink:</label>
+        <input type="text" name="meetlink" required>
+
+        <!-- <label for="eventtype">type:</label>
+        <input type="text" name="eventtype" required> -->
+
+        <select name="eventtype" id="events">
+            <option>keynote</option>
+            <option>paper presentation</option>
+            <option>poster presentation</option>
+        </select>
+
+        <button>create Event</button>
+    </form>
+
+    <!-- <form class="delete">
+        <label for="id">Document id:</label>
+        <input type="text" name="id" required>
+
+        <button class="deleteboo">delete a book</button>
+    </form>
+
+    <form class="update">
+        <label for="id">Document id:</label>
+        <input type="text" name="id" required>
+        <button class="updateboo">Update a book</button>
+    </form> -->
+
+
+    <h2>Firebase Authentication</h2>
+    <form class="signup">
+        <label for="email">email:</label>
+        <!-- It was not working when i added required field for the input -->
+        <input type="email" name="email">
+        <label for="password">password:</label>
+        <input type="password" name="password">
+        <button class="signupboo">signup</button>
+    </form>
+
+
+    <form class="login">
+        <label for="email">email:</label>
+        <input type="email" name="email">
+        <label for="password">password:</label>
+        <input type="password" name="password">
+        <button class="loginboo">login</button>
+    </form>
+
+    <button class="logout">logout</button>
+
+    <!-- <script src="../src/index.js"></script> -->
+    <a class="index1" href="index1.html">Dashboard</a>
+    <a class="index2" href="index2.html">MyEvents</a>
+
+    <!-- <button class="index1" onclick="location.href='index1.html'">first</button> -->
+    <!-- <a class="index2" href="../src/indexes/index2.html">second</a> -->
+    
+    <script src="bundle.js"></script>
+</body>
+</html>
